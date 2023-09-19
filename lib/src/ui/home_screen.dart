@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
 import 'package:flutter_web_test/src/utils/utils.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -121,9 +120,8 @@ class _HomeScreenState extends State<HomeScreen> {
                                 child: Row(
                                   crossAxisAlignment: CrossAxisAlignment.end,
                                   children: [
-                                    SvgPicture.asset(
-                                      "assets/icons/apple.svg",
-                                      height: 56,
+                                    Image.asset(
+                                      "assets/images/apple.png",
                                     ),
                                     const SizedBox(width: 24),
                                     const Text(
@@ -159,13 +157,12 @@ class _HomeScreenState extends State<HomeScreen> {
                               },
                               child: Container(
                                 padding: const EdgeInsets.symmetric(
-                                    horizontal: 20, vertical: 12),
+                                    horizontal: 20, vertical: 16),
                                 child: Row(
                                   crossAxisAlignment: CrossAxisAlignment.end,
                                   children: [
-                                    SvgPicture.asset(
-                                      "assets/icons/google.svg",
-                                      height: 64,
+                                    Image.asset(
+                                      "assets/images/google.png",
                                     ),
                                     const SizedBox(width: 24),
                                     const Text(
